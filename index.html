@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Expense Tracker</title>
+
+<!-- Link CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+    <h2>💳 Expense Tracker</h2>
+    <p>Monthly Limit ₹1500</p>
+
+    <div class="input-box">
+        <input id="desc" placeholder="Description">
+        <input id="amount" type="number" placeholder="₹">
+    </div>
+
+    <button class="main-btn" onclick="addExpense()">Add Expense</button>
+
+    <ul id="expenseList">
+        <div class="empty" id="emptyText">No expenses yet</div>
+    </ul>
+
+    <div class="total">
+        <span>Total:</span>
+        <span id="totalAmount">₹0</span>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar" id="progressBar"></div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
